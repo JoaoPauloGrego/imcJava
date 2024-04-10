@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $h = prompt("Qual é a sua altura?")
+        $peso = prompt("Qual é o seu peso?")
+        $h2 = $h * $h
+        $imc = $peso / $h2
+
+        alert($imc)
+
+        if ($imc < 19.9) {
+            alert("Baixo peso")
+        }
+        if (($imc > 19.9) && $imc < 24.9) {
+            alert("Peso normal")
+        }
+        if (($imc > 25) && $imc < 29.9) {
+            alert("Sobrepeso")
+        }
+        if ($imc > 30) {
+            alert("Obeso")
+        }
+
+        document.write("<table border = '1'>")
+        document.write("<tr>")
+        document.write("<td>", "altura")
+        document.write("</td>")
+        document.write("<td", "peso")
+        document.write("</td>")
+        document.write("<td>", "peso")
+        document.write("</td>")
+        document.write("<td>", "Foto")
+        document.write("</tr>")
+
+        document.write("<tr>")
+        document.write("<td>", $h)
+        document.write("</td>")
+        document.write("<td>", $peso)
+        document.write("</td>")
+        document.write("<td>", $imc)
+        document.write("</td>")
+        if ($imc < 18.5) {
+            document.write("<td><img src='imgT/magro/olivia.jpg'></td")
+        }
+        if ($imc > 18.4 && $imc < 24.9) {
+            document.write("<td><img src='imgT/normal/caua.jpg'></td>")
+        }
+        if($imc > 24.9 && $imc < 29.9){
+            document.write("<td><img src='imgT/sobrepeso/jacquin.jpg'></td>")
+        }
+        if($imc > 29.9){
+            document.write("<td><img src='imgT/obeso/tais.jpg'></td>")
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
